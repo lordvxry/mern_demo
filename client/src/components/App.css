@@ -1,0 +1,37 @@
+@import "normalize.css";
+@import "../../node_modules/@blueprintjs/core/lib/css/blueprint.css";
+
+body {
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+.page_container {
+    display: flex;
+    overflow-y: auto;
+    align-items: center;
+    flex-direction: column;
+    max-height: 90vh;
+    padding: 20px;
+    gap: 10px;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}

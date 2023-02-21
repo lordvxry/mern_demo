@@ -1,0 +1,25 @@
+GET http://localhost:5000/films
+
+###
+POST http://localhost:5000/films
+Content-Type: application/json
+
+{
+  "title": "The Wicker Man",
+  "year": 2006,
+  "genre": "horror"
+}
+
+###
+GET http://localhost:5000/films/63e39fe740acd676b09345c9
+
+###
+DELETE http://localhost:5000/films/63e3a6d2a679f27449dd0e89
+
+###
+PUT http://localhost:5000/films/63e39fe740acd676b09345c9
+Content-Type: application/json
+
+{
+  "year": 1996
+}
